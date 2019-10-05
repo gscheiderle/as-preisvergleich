@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+}
+.row:before {
+    clear: both;
+}
+.row:after {
+    content: "";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+
+
+
+/* grid layout, 3 columns */
+.wrapper {
+    display: grid ; /* display: inline-grid;*/
+    grid-template-columns: "1fr 1fr 1fr 1fr"; /* 3 x 1 fraction */
+    color: #000000;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+}
+
+
+.col-sm|md|lg|xl;
+
+.preis_eingabe {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+	border-color: green;
+    background-color: lightgreen;
+}
+
+
+.preis_eingabe  button {
+	height: 55px;
+	width: 400px;
+	color: red;
+	font-size: 36px;
+  font-weight: 700;
+  background-color: #dadada;
+  border-radius: 5px ;
+}
+
+.preis_eingabe input {
+	height: 40px;
+	width: 250px;
+	color: red;
+	font-size: 36px;
+  font-weight: 400;
+}
+
+
+.preis_eingabe select {
+	font-size: 36px;
+	color: red;
+}
+
+
+.preis_eingabe h1 {
+    
+    color: blue;
+    font-size: 36px;
+    weight: 700;
+}
+
+
+.preis_eingabe table {
+    border:medium;
+    border-color: #DD1C20;
+    width: 60%;
+    height: auto;
+}
+
+

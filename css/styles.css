@@ -1,0 +1,415 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+   
+    background-color: #FFFFFF;
+    margin-right: auto;
+    margin-left: auto;
+    width: 900px;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+html, html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+}
+/*.row:before {
+    clear: both;
+}
+.row:after {
+    content: "";
+    display: table;
+}
+.row:after {
+    clear: both;
+}*/
+
+
+h1 {
+    font-size: 72px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 12px;
+    color: #000000;
+}
+h3 {
+    font-size: 48px;
+    font-weight: 350;
+    text-align: left;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 350;
+    text-align: left;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+/* grid layout, 3 columns */
+.wrapper {
+    display: grid ; /* display: inline-grid;*/
+    grid-template-columns: "1fr 1fr 1fr"; /* 3 x 1 fraction */
+    color: #000000;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+}
+
+
+
+.headline {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+	color: #000000;
+    background-color: yellow;
+}
+
+.preis_abfrage {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    background-color: yellow;
+}
+
+
+
+.preis_abfrage  button {
+	height: 120px;
+	width: 700px;
+	color: red;
+	font-size: 72px;
+  font-weight: 700;
+  background-color: #dadada;
+  border-radius: 25px ;
+}
+
+.preis_abfrage input {
+	height: 80px;
+	widtH: 300px;
+	color: red;
+	font-size: 72px;
+}
+
+.preis_abfrage_2 input {
+	height: 80px;
+	width: 700px;
+	color: red;
+	font-size: 72px;
+}
+
+
+.headline h1 {
+    font-size: 72px;
+    font-weight: 700;
+	text-align: left;
+}
+
+.headline h2 {
+    font-size: 82px;
+    font-weight: 700;
+	text-align: left;
+}
+
+.headline h3 {
+    font-size: 32px;
+    font-weight: 200;
+	text-align: left;
+}
+
+.preis_abfrage table {
+    width: 700px; 
+    border-spacing: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    font-weight: 400;
+    border-width: 2px; 
+    color: #000; 
+}
+
+
+.preis_abfrage td {
+    width: auto; 
+    font-size: 48px;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    color: #000; 
+}
+
+
+
+.preis_abfrage select {
+	font-size: 48px;
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+.headline_3 {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+	color: #000000;
+	border-color: blue;
+    background-color: #F5ABAD;
+}
+
+
+.artikel_eingabe {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+	border-color: blue;
+    background-color: #F5ABAD;
+}
+
+.artikel_eingabe  button {
+    margin-left: auto;
+    margin-right: auto;
+	height: 140px;
+	width: 870px;
+	color: #EF0950;
+	font-size: 60px;
+  font-weight: 700;
+  background-color: #dadada;
+  border-radius: 25px ;
+}
+
+
+
+.artikel_eingabe input {
+	height: 2em;
+	width: 5em;
+	color: #000;
+	font-size: 4em;
+}
+
+
+.headline_3 h1 {
+    font-size: 82px;
+    font-weight: 700;
+	text-align: left;
+}
+
+.headline_3 h2 {
+    font-size: 82px;
+    font-weight: 700;
+	text-align: left;
+}
+
+
+.artikel_eingabe select {
+	font-size: 82px;
+	color: blue;
+}
+
+.artikel_eingabe h2 {
+    font-size: 6em;
+    font-weight: 600;
+	text-align: left;
+     
+}
+
+.artikel_eingabe h3 {
+    font-size: 4em;
+    font-weight: 400;
+	text-align: left;
+}
+
+.artikel_eingabe h4 {
+    font-size: 5em;
+    font-weight: 400;
+	text-align: left;
+}
+
+.headline_2 {
+    grid-column: 1 / span 4;
+    grid-row: 5;
+	color: #000000;
+	border-color: green;
+    background-color: lightgreen;
+}
+
+
+
+
+
+
+
+.preis_eingabe {
+    grid-column: 1 / span 4;
+    grid-row: 6;
+	border-color: green;
+    background-color: lightgreen;
+}
+
+
+.preis_eingabe  button {
+	height: 120px;
+	width: 700px;
+	color: red;
+	font-size: 72px;
+  font-weight: 700;
+  background-color: #dadada;
+  border-radius: 25px ;
+}
+
+.preis_eingabe input {
+	height: 80px;
+	widtH: 300px;
+	color: red;
+	font-size: 60px;
+  font-weight: 400;
+}
+
+/*.preis_eingabe input {
+	height: 2em;
+	width: 5em;
+	color: #000;
+	font-size: 4em;
+}*/
+
+
+.headline_2 h1 {
+    font-size: 82px;
+    font-weight: 700;
+	text-align: left;
+}
+
+.headline_2 h2 {
+    font-size: 82px;
+    font-weight: 700;
+	text-align: left;
+}
+
+
+.preis_eingabe select {
+	font-size: 82px;
+	color: blue;
+}
+
+
+
+
+
+
+
+
+.headline_4 {
+    grid-column: 1 / span 4;
+    grid-row: 7;
+	color: #000000;
+	border-color: blue;
+    background-color: lightblue;
+}
+
+
+.anbieter_eingabe {
+    grid-column: 1 / span 4;
+    grid-row: 8;
+	border-color: blue;
+    background-color: lightblue;
+}
+
+
+
+.anbieter_eingabe  button {
+	height: 120px;
+	width: 700px;
+	color: red;
+	font-size: 72px;
+  font-weight: 700;
+  background-color: #dadada;
+  border-radius: 25px ;
+}
+
+.anbieter_eingabe input {
+	height: 80px;
+	widtH: 300px;
+	color: red;
+	font-size: 72px;
+}
+
+#textfeld input {
+	height: 80px;
+	widtH: 800px;
+	color: red;
+	font-size: 72px;
+}
+
+
+.headline_4 h1 {
+    font-size: 82px;
+    font-weight: 700;
+	text-align: left;
+}
+
+.headline_4 h2 {
+    font-size: 82px;
+    font-weight: 700;
+	text-align: left;
+}
+
+
+.anbieter_eingabe select {
+	font-size: 82px;
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.style-nav ul {
+    list-style-type: disc;
+}
+
+.style-nav ul li a {
+    text-decoration: none;
+    color: #2F322A;
+    display: block;
+    text-transform: uppercase;
+    padding: 30px;
+}
+

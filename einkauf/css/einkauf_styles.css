@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+}
+.row:before {
+    clear: both;
+}
+.row:after {
+    content: "";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+
+body {
+   
+    background-color: #FFFFFF;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+    font-size: 14px;
+    color: #000000;
+}
+
+/*h1 {
+    font-size: 82px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h5 {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+}
+h2 {
+    font-size: 82px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 12px;
+    color: #000000;
+}
+h3 {
+    font-size: 36px;
+    font-weight: 350;
+    text-align: left;
+    margin-bottom: 12px;
+    color: #000000;
+}
+h4 {
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 120px;
+    color: #000000;
+}
+h6 {
+    font-size: 14px;
+    font-weight: 350;
+    text-align: left;
+    margin-bottom: 12px;
+    color: #000000;
+}
+*/
+
+/* grid layout, 6 columns */
+.wrapper {
+    display: grid ; /* display: inline-grid;*/
+    grid-template-columns: "1fr"; /* 3 x 1 fraction */
+    color: #000000;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+}
+
+
+.wrapper  button {
+	height: 30px;
+	width: 30px;
+	color: red;
+	font-size: 1rem;
+  
+  background-color: #dadada;
+  border-radius: 10px ;
+}
+
+
+
+
+
+
+
+
+
+.headline {
+    grid-column: 1;
+    grid-row: 1;
+	color: #000000;
+    background-color: yellow;
+}
+
+.preis_abfrage {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: yellow;
+}
+
+.preis_abfrage  button {
+	height: 70px;
+	width: 400px;
+	color: red;
+	font-size: 2rem;
+  font-weight: 700;
+  background-color: #dadada;
+  border-radius: 10px ;
+}
+
+.preis_abfrage input {
+	height: 70px;
+	widtH: 400px;
+	color: red;
+	font-size: 1.5rem;
+}
+
+
+.headline h1 {
+    font-size: 2rem;
+    font-weight: 700;
+	text-align: left;
+}
+
+.headline h2 {
+    font-size: 82px;
+    font-weight: 700;
+	text-align: left;
+}
+
+.headline h3 {
+    font-size: 32px;
+    font-weight: 200;
+	text-align: left;
+}
+
+.preis_abfrage table {
+    width: auto; 
+    height: auto;
+    border-spacing: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 400;
+    border-width: 2px; 
+    color: #000; 
+}
+
+
+.preis_abfrage td {
+    width: auto; 
+    font-size: 48px;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    color: #000; 
+}
+
+
+
+.preis_abfrage select {
+	font-size: 2rem;
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+.headline_2 {
+    grid-column: 1;
+    grid-row: 3;
+	color: #000000;
+	border-color: green;
+    background-color: lightgreen;
+}
+
+.preis_eingabe {
+    grid-column: 1;
+    grid-row: 4;
+	border-color: green;
+    background-color: lightgreen;
+}
+
+.preis_eingabe  button {
+	height: 70px;
+	width: 300px;
+	color: red;
+	font-size: 2rem;
+  font-weight: 700;
+  background-color: #dadada;
+  border-radius: 10px ;
+}
+
+.preis_eingabe input {
+	height: 70px;
+	widtH: 400px;
+	color: red;
+	font-size: 1.5rem;
+}
+
+
+.headline_2 h1 {
+    font-size: 3rem;
+    font-weight: 700;
+	text-align: left;
+}
+
+.headline_2 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+	text-align: left;
+}
+
+
+.preis_eingabe select {
+	font-size: 2rem;
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
+.headline_3 {
+    grid-column: 1;
+    grid-row: 5;
+	color: #000000;
+	border-color: blue;
+    background-color: yellowgreen;
+}
+
+
+.artikel_eingabe {
+    grid-column: 1;
+    grid-row: 6;
+	border-color: blue;
+    background-color: yellowgreen;
+}
+
+.artikel_eingabe  button {
+	height: 70px;
+	width: 400px;
+	color: red;
+	font-size: 2rem;
+  font-weight: 700;
+  background-color: #dadada;
+  border-radius: 10px ;
+}
+
+
+.artikel_eingabe table {
+    width: auto; 
+    height: auto;
+    border-spacing: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 700;
+    border-width: 2px; 
+    color: #000; 
+}
+
+
+.artikel_eingabe td {
+    width: auto; 
+    height: auto;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    color: #000; 
+}
+
+
+.anbieter_eingabe h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: right;
+    color: #000;
+    background-color: lightgreen;
+}
+
+.anbieter_eingabe h2 {
+    font-size: 72px;
+    font-weight: 700;
+    text-align: right;
+    color: #FFF;
+    background-color: red;
+}
+
+
+
+
+.artikel_eingabe input {
+	height: 70px;
+	widtH: 400px;
+	color: red;
+	font-size: 1.5rem;
+}
+
+#textfeld input {
+	height: 70px;
+	widtH: 400px;
+	color: red;
+	font-size: 1.5rem;
+}
+
+
+.headline_3 h1 {
+    font-size: 3rem;
+    font-weight: 700;
+	text-align: left;
+}
+
+.headline_3 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+	text-align: left;
+}
+
+
+.artikel_eingabe select {
+	font-size: 2rem;
+	color: blue;
+}
+
+
+
+

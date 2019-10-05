@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, html * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+}
+.row:before {
+    clear: both;
+}
+.row:after {
+    content: "";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+
+
+
+
+
+
+/* grid layout, 3 columns */
+.wrapper {
+    display: grid ; /* display: inline-grid;*/
+    grid-template-columns: "1fr 1fr 1fr 1fr"; /* 3 x 1 fraction */
+    color: #000000;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+}
+
+
+
+
+.headline_3 {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+	color: #000000;
+	border-color: blue;
+    background-color: #F5ABAD;
+}
+
+
+.artikel_eingabe {
+    grid-column: 1 / span 4;
+    grid-row: 4;
+	border-color: blue;
+    background-color: #F5ABAD;
+}
+
+.artikel_eingabe  button {
+    margin-left: auto;
+    margin-right: auto;
+	height: 70px;
+	width: 500px;
+	color: #EF0950;
+	font-size: 36px;
+  font-weight: 700;
+  background-color: #dadada;
+  border-radius: 15px ;
+}
+
+
+
+.artikel_eingabe input {
+	height: 120px;
+	width: 500px;
+	color: #000;
+	font-size: 4em;
+}
+
+
+.headline_3 h1 {
+    font-size: 48px;
+    font-weight: 700;
+	text-align: left;
+}
+
+.headline_3 h2 {
+    font-size: 48px;
+    font-weight: 700;
+	text-align: left;
+}
+
+
+.artikel_eingabe select {
+	font-size: 36px;
+	color: blue;
+}
+
+
+
+
+
+
+
+
+
